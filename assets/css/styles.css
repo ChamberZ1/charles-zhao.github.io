@@ -736,6 +736,14 @@ img {
   transform: translateX(.25rem);
 }
 
+.portfolio__button.disabled {
+  pointer-events: none;      /* prevents clicking */
+  opacity: 0.5;              /* makes it look faded */
+  cursor: not-allowed;       /* shows disabled cursor */
+  box-shadow: none;          /* remove hover shadows */
+  transform: none;           /* stop hover scaling if you have it */
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: '';
